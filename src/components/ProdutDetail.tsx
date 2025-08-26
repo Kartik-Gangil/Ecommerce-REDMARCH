@@ -107,7 +107,12 @@ const ProdutDetail = () => {
                             <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
                                 Add to Cart
                             </button>
-                            <button onClick={() => setNotify(notify == true ? false : true)} className={`  bg-white px-4 py-3 rounded-full font-bold  transition ${notify == true ? "text-white bg-[#991B1B] hover:bg-red-900" : "text-[#991B1B] hover:bg-gray-200" } `}>
+                            <button
+                                onClick={() => setNotify(notify == true ? false : true)}
+                                className={`  bg-white px-4 py-3 rounded-full font-bold  transition ${notify == true ? "text-white bg-[#991B1B] hover:bg-red-900" : "text-[#991B1B] hover:bg-gray-200" } `}
+                                title="Notify me"
+                                aria-label="Notify me"
+                            >
                                 <BellRingIcon/>
                             </button>
                         </div>
