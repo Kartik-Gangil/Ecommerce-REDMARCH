@@ -19,7 +19,7 @@ const LandingPage = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center  bg-no-repeat"
                     style={{
-                        backgroundImage: 'url(/bg-image.jpg)',
+                        backgroundImage: 'url(/Shoes/sport_shoe.jpg)',
                     }}
                 >
                     <div className="absolute inset-0 bg-black/60"></div>
@@ -34,7 +34,7 @@ const LandingPage = () => {
                         <button onClick={() => Navigate("/listings")} className="bg-red-800 hover:bg-red-900 text-white px-4 py-2 md:px-8 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
                             Shop Now
                         </button>
-                        <button className="border border-white hover:bg-white hover:text-black text-white px-4 py-2 md:px-8 md:py-3 rounded-lg font-semibold transition-all duration-300">
+                        <button onClick={() => Navigate("/soon")} className="border border-white hover:bg-white hover:text-black text-white px-4 py-2 md:px-8 md:py-3 rounded-lg font-semibold transition-all duration-300">
                             Watch Stories
                         </button>
                     </div>
@@ -57,12 +57,12 @@ const LandingPage = () => {
                             {
                                 Route: "/listings?Sneaker",
                                 name: "Sneaker",
-                                image: "https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+                                image: "/Shoes/sneaker.jpg"
                             },
                             {
                                 Route: "/listings?Formal",
                                 name: "Formal",
-                                image: "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+                                image: "/Shoes/formal.jpg"
                             }
                         ].map((product, index) => (
                             <ProductCard Route={product.Route} key={index} index={index} title={product.name} image={product.image} />

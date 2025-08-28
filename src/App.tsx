@@ -6,6 +6,7 @@ import Cart from './Pages/Cart';
 import ProdutDetail from './components/ProdutDetail';
 import OrderPage from './Pages/OrderPage';
 import OrderHistory from './Pages/OrderHistory';
+import ComingSoon from './components/ComingSoon';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/ProductDetails' element={<ProdutDetail/>} />
         <Route path='/order' element={<OrderPage/>} />
         <Route path='/orderhistroy' element={<OrderHistory/>} />
+        <Route path='/soon' element={<ComingSoon/>} />
       </Routes>
     </BrowserRouter>
   );
