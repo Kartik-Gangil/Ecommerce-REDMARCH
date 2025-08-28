@@ -7,34 +7,41 @@ import ProductCard from "../components/ProductCard"
 const Listings = () => {
     const ProductArray = [
         {
+            Route: "/ProductDetails",
             name: "Urban Legend",
             price: "279",
             originalPrice: "320",
             image: "https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
         },
         {
+            Route: "/ProductDetails",
             name: "Street King",
             price: "329",
             originalPrice: "380",
             image: "https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
         },
         {
+            Route: "/ProductDetails",
             name: "Night Walker",
             price: "359",
             originalPrice: "420",
             image: "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
         },
         {
+            Route: "/ProductDetails",
             name: "Shadow Elite",
             price: "299",
             image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
         },
         {
+
+            Route: "/ProductDetails",
             name: "Crimson Runner",
             price: "349",
             image: "https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
         },
         {
+            Route: "/ProductDetails",
             name: "Midnight Force",
             price: "399",
             image: "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
@@ -130,6 +137,7 @@ const Listings = () => {
                                 {/* <p>No products available at the moment.</p> */}
                                 {ProductArray.map((product, index) => (
                                     <ProductCard
+                                        Route={product.Route}
                                         key={index}
                                         index={index}
                                         name={product.name}
@@ -144,7 +152,7 @@ const Listings = () => {
                 </div>
 
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

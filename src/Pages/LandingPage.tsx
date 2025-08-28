@@ -17,9 +17,9 @@ const LandingPage = () => {
             {/* Hero Section */}
             <section className="relative h-screen flex items-center justify-center overflow-hidden">
                 <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    className="absolute inset-0 bg-cover bg-center  bg-no-repeat"
                     style={{
-                        backgroundImage: 'url(https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)',
+                        backgroundImage: 'url(/bg-image.jpg)',
                     }}
                 >
                     <div className="absolute inset-0 bg-black/60"></div>
@@ -31,11 +31,11 @@ const LandingPage = () => {
                     </h1>
                     <p className="text-xs md:text-xl mb-6 font-serif leading-tight" >Make Your Own Story with RED MARCH</p>
                     <div className="flex flex-row gap-4 justify-center items-center">
-                        <button onClick={()=>Navigate("/listings")} className="bg-red-800 hover:bg-red-900 text-white px-4 py-2 md:px-8 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                        <button onClick={() => Navigate("/listings")} className="bg-red-800 hover:bg-red-900 text-white px-4 py-2 md:px-8 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
                             Shop Now
                         </button>
                         <button className="border border-white hover:bg-white hover:text-black text-white px-4 py-2 md:px-8 md:py-3 rounded-lg font-semibold transition-all duration-300">
-                            Our Story
+                            Watch Stories
                         </button>
                     </div>
                 </div>
@@ -50,22 +50,22 @@ const LandingPage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
                             {
-                                name: "Shadow Elite",
-                                price: "299",
-                                image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+                                Route: "/listings?Sports",
+                                name: "Sports",
+                                image: "/Shoes/sport_shoe.jpg"
                             },
                             {
-                                name: "Crimson Runner",
-                                price: "349",
+                                Route: "/listings?Sneaker",
+                                name: "Sneaker",
                                 image: "https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
                             },
                             {
-                                name: "Midnight Force",
-                                price: "399",
+                                Route: "/listings?Formal",
+                                name: "Formal",
                                 image: "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
                             }
                         ].map((product, index) => (
-                            <ProductCard key={index} index={index} name={product.name} price={product.price} image={product.image} />
+                            <ProductCard Route={product.Route} key={index} index={index} title={product.name} image={product.image} />
                         ))}
                     </div>
                 </div>
