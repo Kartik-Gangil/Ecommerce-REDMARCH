@@ -8,44 +8,75 @@ const Listings = () => {
     const ProductArray = [
         {
             Route: "/ProductDetails",
-            name: "Urban Legend",
-            price: "279",
-            originalPrice: "320",
-            image: "https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+            name: "RedMarch Marchion Oxford Edition",
+            price: "4500",
+            originalPrice: "5000",
+            image: "/listings_shoe_temporary/Formals_Mock_Design/Marchion Oxford Edition/Gemini_Generated_Image_850v8e850v8e850v.png"
         },
         {
             Route: "/ProductDetails",
-            name: "Street King",
-            price: "329",
-            originalPrice: "380",
-            image: "https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+            name: "RedMarch Cap-Toe Oxford",
+            price: "5000",
+            originalPrice: "6000",
+            image: "/listings_shoe_temporary/Formals_Mock_Design/Cap-Toe Oxford/Gemini_Generated_Image_4my9b14my9b14my9.png"
         },
         {
             Route: "/ProductDetails",
-            name: "Night Walker",
-            price: "359",
-            originalPrice: "420",
-            image: "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+            name: "RedMarch Marchion Viceroy Edition",
+            price: "6000",
+            originalPrice: "7000",
+            image: "/listings_shoe_temporary/Formals_Mock_Design/Marchion Viceroy Edition/Gemini_Generated_Image_lds00mlds00mlds0.png"
         },
         {
             Route: "/ProductDetails",
-            name: "Shadow Elite",
-            price: "299",
-            image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+            name: "RedMarch Blitz",
+            price: "5000",
+            originalPrice: "6000",
+            image: "/listings_shoe_temporary/SNKRs Mock Designs/SNKRs Blitz/Gemini_Generated_Image_ofvnfcofvnfcofvn.png"
         },
         {
 
             Route: "/ProductDetails",
-            name: "Crimson Runner",
-            price: "349",
-            image: "https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+            name: "RedMarch Officer",
+            price: "4000",
+            originalPrice: "6000",
+            image: "/listings_shoe_temporary/SNKRs Mock Designs/SNKRs Officer_s/Gemini_Generated_Image_rvzauirvzauirvza.png"
         },
         {
             Route: "/ProductDetails",
-            name: "Midnight Force",
-            price: "399",
-            image: "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
-        }
+            name: "RedMarch Prime",
+            price: "6000",
+            originalPrice: "7000",
+            image: "/listings_shoe_temporary/SNKRs Mock Designs/SNKRs Prime/Gemini_Generated_Image_gk6i0tgk6i0tgk6i.png"
+        },
+        {
+            Route: "/ProductDetails",
+            name: "RedMarch Alpha",
+            price: "5500",
+            originalPrice: "7000",
+            image: "/listings_shoe_temporary/Sports Mock Designs/Sports Alpha/Gemini_Generated_Image_nf4tranf4tranf4t.png"
+        },
+        {
+            Route: "/ProductDetails",
+            name: "RedMarch Apex",
+            price: "5999",
+            originalPrice: "6500",
+            image: "/listings_shoe_temporary/Sports Mock Designs/Sports Apex/Gemini_Generated_Image_ufmj8sufmj8sufmj.png"
+        },
+        {
+            Route: "/ProductDetails",
+            name: "RedMarch Blaze",
+            price: "4999",
+            originalPrice: "5500",
+            image: "/listings_shoe_temporary/Sports Mock Designs/Sports Blaze/Gemini_Generated_Image_t2jbs2t2jbs2t2jb.png"
+        },
+        {
+            Route: "/ProductDetails",
+            name: "RedMarch Gamma",
+            price: "4000",
+            originalPrice: "4500",
+            image: "/listings_shoe_temporary/Sports Mock Designs/Sports Gamma/Gemini_Generated_Image_3ugemd3ugemd3uge.png"
+        },
     ]
     return (
         <div className="min-h-screen">

@@ -9,9 +9,11 @@ interface ImgObject {
 }[]
 const ProdutDetail = () => {
     const ImgArray: ImgObject[] = [
-        { Img: "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" },
-        { Img: "https://www.asics.co.in/media/catalog/product/1/0/1071a116_400_sr_rt_glb.jpg?optimize=high&bg-color=255%2C255%2C255&fit=cover&height=375&width=500&auto=webp&format=pjpg" },
-        { Img: "https://www.walkaroo.in/cdn/shop/files/1_dc943266-f6d6-4969-8184-27eb13bed67f.jpg?v=1753514513" }
+        { Img: "/listings_shoe_temporary/Formals_Mock_Design/Cap-Toe Oxford/Gemini_Generated_Image_4my9b14my9b14my9.png" },
+        { Img: "/listings_shoe_temporary/Formals_Mock_Design/Cap-Toe Oxford/Gemini_Generated_Image_a4qsa8a4qsa8a4qs.png" },
+        { Img: "/listings_shoe_temporary/Formals_Mock_Design/Cap-Toe Oxford/Gemini_Generated_Image_dqjqbzdqjqbzdqjq.png" },
+        { Img: "/listings_shoe_temporary/Formals_Mock_Design/Cap-Toe Oxford/Gemini_Generated_Image_jb7oaijb7oaijb7o.png" },
+        { Img: "/listings_shoe_temporary/Formals_Mock_Design/Cap-Toe Oxford/Gemini_Generated_Image_kv7wvpkv7wvpkv7w.png" },
     ];
     const [mainImg, setMainImg] = useState<string>(ImgArray[0].Img);
 
@@ -68,7 +70,7 @@ const ProdutDetail = () => {
                             <img
                                 src={mainImg}
                                 alt="product_image"
-                                className="w-full h-full object-cover opacity-0" // hides original but keeps size
+                                className="w-full h-full object-cover " // hides original but keeps size
                             />
                         </div>
 
